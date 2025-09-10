@@ -1,6 +1,13 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet");
 
+@font-face {
+  font-family: 'AtleticoMadrid';
+  src: url('/src/assets/fonts/Atletico\ Madrid\ 23-24\ Tipografstore.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 5rem;
@@ -11,7 +18,7 @@
   --first-color-alt: hsl(138, 93%, 46%);
   --first-color-dark: hsl(0, 0%, 0%);
   --title-color: hsl(0, 0%, 100%);
-  --text-color: hsl(226, 100%, 50%);
+  --text-color: hsl(61, 100%, 51%);
   --text-color-light: hsl(353, 16%, 48%);
   --white-color: hsl(0, 1%, 45%);
   --black-color: hsl(0, 0%, 0%);
@@ -28,7 +35,7 @@
   --bigger-font-size: 1.5rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
-  --h3-font-size: 1rem;
+  --h3-font-size: 5rem;
   --normal-font-size: .938rem;
   --small-font-size: .813rem;
   --smaller-font-size: .75rem;
@@ -90,7 +97,7 @@ h1, h2, h3, h4 {
   color: var(--title-color);
   font-weight: var(--font-regular);
   font-family: var(--second-font);
-  line-height: 120%;
+  line-height: 180%;
 }
 
 ul {
@@ -99,6 +106,10 @@ ul {
 
 a {
   text-decoration: none;
+    color: var(--title-color);
+  font-weight: var(--font-regular);
+  font-family: var(--second-font);
+  line-height: 180%;
 }
 
 img {
@@ -158,6 +169,8 @@ img {
   column-gap: 2rem;
   font-family: var(--second-font);
   color: var(--title-color);
+  font-size: var(--bigger-font-size);
+  font-family: 'AtleticoMadrid', sans-serif;
 
   img{
     width: 50px;
