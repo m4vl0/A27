@@ -311,11 +311,11 @@ img {
 }
 
 .home__board,
-.home__pizza{
+.home__escudo{
   filter: var(--shadow-big-img);
 }
 
-.home__pizza{
+.home__escudo{
   width: 200px;
   z-index: 2;
 }
