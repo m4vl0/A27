@@ -7,6 +7,7 @@ import Players from './components/Players'
 import Results from './components/Results'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+2
 
 function App() {
   useEffect(() => {

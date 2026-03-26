@@ -1,4 +1,5 @@
 import React from 'react';
+import contactImg from '../assets/img/contact-img.png';
 
 const Contact = () => {
   return (
@@ -45,7 +46,7 @@ const Contact = () => {
         </div>
 
         <div className="contact__image">
-          <img src="src/assets/img/contact-img.png" alt="contacto club" className="contact__img" />
+          <img src={contactImg} alt="contacto club" className="contact__img" />
         </div>
       </div>
     </section>

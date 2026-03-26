@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
+import escudoVs from '../assets/img/home-escudo vs.png';
 
 const Results = () => {
   useEffect(() => {
-    // Initialize Swiper
     if (typeof Swiper !== 'undefined') {
       new Swiper('.popular__swiper', {
         loop: true,
@@ -27,17 +27,17 @@ const Results = () => {
           <div className="popular__swiper swiper">
             <div className="swiper-wrapper">
               <article className="popular__card swiper-slide">
-                <img src="src/assets/img/home-escudo vs.png" alt="resultado" className="popular__img" />
+                <img src={escudoVs} alt="resultado" className="popular__img" />
                 <h3 className="popular__title">ATLETICO (6) VS (7) RIVAL A </h3>
               </article>
 
               <article className="popular__card swiper-slide">
-                <img src="src/assets/img/home-escudo vs.png" alt="resultado" className="popular__img" />
+                <img src={escudoVs} alt="resultado" className="popular__img" />
                 <h3 className="popular__title">ATLETICO VS RIVAL B </h3>
               </article>
 
               <article className="popular__card swiper-slide">
-                <img src="src/assets/img/home-escudo vs.png" alt="resultado" className="popular__img" />
+                <img src={escudoVs} alt="resultado" className="popular__img" />
                 <h3 className="popular__title">ATLETICO VS RIVAL C </h3>
               </article>
             </div>
@@ -51,17 +51,17 @@ const Results = () => {
         <div className="popular__swiper swiper">
           <div className="swiper-wrapper">
             <article className="popular__card swiper-slide">
-              <img src="src/assets/img/home-escudo vs.png" alt="fixture" className="popular__img" />
+              <img src={escudoVs} alt="fixture" className="popular__img" />
               <h3 className="popular__title">ATLETICO VS EQUIPO A </h3>
             </article>
 
             <article className="popular__card swiper-slide">
-              <img src="src/assets/img/home-escudo vs.png" alt="fixture" className="popular__img" />
+              <img src={escudoVs} alt="fixture" className="popular__img" />
               <h3 className="popular__title">ATLETICO VS EQUIPO B </h3>
             </article>
 
             <article className="popular__card swiper-slide">
-              <img src="src/assets/img/home-escudo vs.png" alt="fixture" className="popular__img" />
+              <img src={escudoVs} alt="fixture" className="popular__img" />
               <h3 className="popular__title">ATLETICO VS EQUIPO C </h3>
             </article>
           </div>
