@@ -1,4 +1,5 @@
 import React from 'react';
+import camiseta from '../assets/img/Camiseta-img.png';
 
 const About = () => {
   return (
@@ -16,7 +17,7 @@ const About = () => {
           <a href="#popular" className="button"> RESULTADOS </a>
         </div>
 
-        <img src="src/assets/img/Camiseta-img.png" alt="camiseta oficial" className="about__img" />
+        <img src={camiseta} alt="camiseta oficial" className="about__img" />
       </div>
     </section>
   );
