@@ -5,7 +5,7 @@ const About = () => {
     <section className="about section" id="about">
       <div className="about__container container grid">
         <div className="about__data">
-          <h2 className="section__title">Atlético 27 F.C. <br /> PROXIMO PARTIDO</h2>
+          <h2 className="section__title">Atlético 27 F.C. <br /> MACTH CENTER</h2>
 
           <p className="about__description">
             Atlético 27 F.C. es un club de barrio originario del paradero 27 de la comuna de La Florida. 
