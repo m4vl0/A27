@@ -1,0 +1,22 @@
+{
+  "players": [
+    {
+      "name": "Jugador 1",
+      "position": "Portero",
+      "number": "1",
+      "img": "/img/Camiseta 1-img.png"
+    },
+    {
+      "name": "Jugador 2",
+      "position": "Defensa",
+      "number": "2",
+      "img": "/img/Camiseta-img.png"
+    },
+    {
+      "name": "Jugador 3",
+      "position": "Mediocampista",
+      "number": "3",
+      "img": "/img/Camiseta-img.png"
+    }
+  ]
+}
