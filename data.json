@@ -1,4 +1,9 @@
 {
+  "coach": {
+    "name": "Nombre del DT",
+    "position": "Director Técnico",
+    "img": "src/assets/img/Camiseta-jug.png"
+  },
   "players": [
     {
       "name": "Jugador 1",
@@ -13,7 +18,7 @@
       "img": "src/assets/img/Camiseta-img.png"
     },
     {
-      "name": "Jugador 3",
+      "name": "Pablo Navarro",
       "position": "Mediocampista",
       "number": "3",
       "img": "src/assets/img/Camiseta-img.png"
@@ -32,5 +37,11 @@
       "team_b": "RIVAL B",
       "score_b": "0"
     }
-  ]
+  ],
+  "next_match": {
+    "opponent": "RIVAL D",
+    "date": "2026-04-05T10:00:00",
+    "location": "Estadio Municipal",
+    "competition": "Liga F7 Senior"
+  }
 }

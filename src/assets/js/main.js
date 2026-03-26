@@ -81,6 +81,54 @@ const scrollActive = () =>{
 }
 window.addEventListener('scroll', scrollActive)
 
+/*=============== LOAD PLAYERS FROM JSON ===============*/
+const loadPlayers = async () => {
+    try {
+        const response = await fetch('data.json');
+        const data = await response.json();
+        const playersContainer = document.getElementById('players-container');
+
+        if (playersContainer && data.players) {
+            playersContainer.innerHTML = ''; // Limpiar contenedor
+            
+            // Cargar Director Técnico primero
+            if (data.coach) {
+                const coachCard = `
+                    <article class="products__card coach__card">
+                        <img src="${data.coach.img}" alt="${data.coach.name}" class="products__img">
+                        <h3 class="products__name">${data.coach.name} <br> ${data.coach.position}</h3>
+                        <span class="products__price">DT</span>
+                        <button class="products__button">
+                            <i class="ri-clipboard-line"></i>
+                        </button>
+                    </article>
+                `;
+                playersContainer.insertAdjacentHTML('beforeend', coachCard);
+            }
+
+            // Cargar Jugadores
+            data.players.forEach(player => {
+                const playerCard = `
+                    <article class="products__card">
+                        <img src="${player.img}" alt="${player.name}" class="products__img">
+                        <h3 class="products__name">${player.name} <br> ${player.position}</h3>
+                        <span class="products__price">${player.number}</span>
+                        <button class="products__button">
+                            <i class="ri-shield-user-line"></i>
+                        </button>
+                    </article>
+                `;
+                playersContainer.insertAdjacentHTML('beforeend', playerCard);
+            });
+        }
+    } catch (error) {
+        console.error('Error cargando jugadores:', error);
+    }
+}
+
+// Llamar a la función al cargar el DOM
+document.addEventListener('DOMContentLoaded', loadPlayers);
+
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 const sr = ScrollReveal({
     origin: 'top',

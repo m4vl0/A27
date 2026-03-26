@@ -530,16 +530,118 @@ img {
   filter: var(--shadow-big-img);
 }
 
+/*=============== MATCH CENTER ===============*/
+.match-center{
+  background-color: var(--body-color);
+}
+
+.match-center__container{
+  row-gap: 3rem;
+  padding-bottom: 2rem;
+}
+
+.match-center__description{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.match-center__content{
+  background-color: var(--container-color);
+  padding: 3rem 1.5rem;
+  border-radius: 2rem;
+  text-align: center;
+  box-shadow: 0 8px 24px hsla(353, 100%, 8%, .1);
+}
+
+.match-center__teams{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.match-center__team{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: .5rem;
+}
+
+.match-center__team-img{
+  width: 80px;
+  filter: var(--shadow-small-img);
+}
+
+.match-center__team-name{
+  font-family: 'AtleticoMadrid', sans-serif;
+  color: var(--white-color);
+  font-size: var(--normal-font-size);
+}
+
+.match-center__vs{
+  font-family: 'AtleticoMadrid', sans-serif;
+  font-size: var(--h1-font-size);
+  color: var(--white-color);
+}
+
+.match-center__details{
+  margin-bottom: 2.5rem;
+}
+
+.match-center__competition{
+  font-family: 'AtleticoMadrid', sans-serif;
+  font-size: var(--h2-font-size);
+  color: var(--black-color);
+  margin-bottom: .5rem;
+}
+
+.match-center__location,
+.match-center__date{
+  color: var(--black-color);
+  font-size: var(--small-font-size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: .25rem;
+}
+
+.match-center__countdown{
+  display: flex;
+  justify-content: center;
+  column-gap: 1.5rem;
+}
+
+.countdown__item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.countdown__number{
+  font-family: 'AtleticoMadrid', sans-serif;
+  font-size: var(--h1-font-size);
+  color: var(--black-color);
+}
+
+.countdown__text{
+  font-size: var(--smaller-font-size);
+  color: var(--black-color);
+  text-transform: uppercase;
+  font-weight: var(--font-semi-bold);
+}
+
+
 
 /*=============== PLAYERS ===============*/
-.products__container{
+.players__container{
   padding-top: 3.5rem;
   grid-template-columns: repeat(2, 1fr);
   gap: 5rem 1rem;
   font-family: 'AtleticoMadrid', sans-serif;
 }
 
-.products__card{
+.players__card{
   position: relative;
   background-color: var(--container-color);
   padding: 5rem .75rem 1.25rem .75rem;
@@ -548,7 +650,7 @@ img {
   font-family: 'AtleticoMadrid', sans-serif;
 }
 
-.products__img{
+.players__img{
   width: 120px;
   position: absolute;
   top: -3.5rem;
@@ -559,21 +661,21 @@ img {
   transition: transform .4s;
 }
 
-.products__name{
+.players__name{
   font-size: var(--h3-font-size);
   margin-bottom: .5rem;
   color: var(--white-color);
   font-family: 'AtleticoMadrid', sans-serif;
 }
 
-.products__price{
+.players__price{
   font-family: 'AtleticoMadrid', sans-serif;
   font-size: var(--h1-font-size);
   line-height: 120%;
   color: var(--white-color);
 }
 
-.products__button{
+.players__button{
   position: absolute;
   right: .75rem;
   bottom: 1.25rem;
@@ -593,7 +695,7 @@ img {
 }
 
 /* when hovering product card, style on the img */
-.products__card:hover .products__img{
+.players__card:hover .players__img{
   transform: translateY(-.5rem);
 }
 
@@ -824,7 +926,7 @@ img {
     margin-inline: 1rem;
   }
 
-  .products__container{
+  .players__container{
     grid-template-columns: 150px;
     justify-content: center;
   }
@@ -856,7 +958,7 @@ img {
     justify-content: center;
   }
 
-  .products__container{
+  .players__container{
     grid-template-columns: repeat(2, 160px);
     justify-content: center;
   }
@@ -879,7 +981,7 @@ img {
     justify-self: center;
   }
 
-  .products__container{
+  .players__container{
     grid-template-columns: repeat(3, 160px);
     justify-content: center;
   }
@@ -1103,27 +1205,72 @@ img {
     width: 550px;
   }
 
-  /* products section */
-  .products__container{
+  /* Match Center Desktop Styles */
+  .match-center__content{
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    column-gap: 4rem;
+  }
+
+  .match-center__teams{
+    column-gap: 4rem;
+    margin-bottom: 0;
+  }
+
+  .match-center__team-img{
+    width: 120px;
+  }
+
+  .match-center__team-name{
+    font-size: var(--h2-font-size);
+  }
+
+  .match-center__vs{
+    font-size: var(--biggest-font-size);
+  }
+
+  .match-center__details{
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  .match-center__location,
+  .match-center__date{
+    justify-content: flex-start;
+  }
+
+  .match-center__countdown{
+    column-gap: 3rem;
+  }
+
+  .countdown__number{
+    font-size: var(--biggest-font-size);
+  }
+
+
+  /* players section */
+  .players__container{
     grid-template-columns: repeat(3, 250px);
     gap: 7.5rem 4rem;
   }
 
-  .products__card{
+  .players__card{
     padding: 10rem 1.5rem 1.5rem;
     border-radius: 2rem;
   }
 
-  .products__img{
+  .players__img{
     width: 200px;
     top: -4rem;
   }
 
-  .products__name{
+  .players__name{
     font-size: var(--h2-font-size);
   }
 
-  .products__button{
+  .players__button{
     right: 1.5rem;
     bottom: 1.5rem;
     padding: 6px;
