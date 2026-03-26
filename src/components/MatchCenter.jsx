@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import escudo from '../assets/img/home-escudo.png';
+import escudoVs from '../assets/img/home-escudo vs.png';
 
 const MatchCenter = () => {
   const [timeLeft, setTimeLeft] = useState({
@@ -13,10 +15,8 @@ const MatchCenter = () => {
       const now = new Date();
       const target = new Date(now);
       
-      // Tuesday is 2
       let daysUntilTuesday = (2 - now.getDay() + 7) % 7;
       
-      // If today is Tuesday and it's already past 21:00, move to next week
       if (daysUntilTuesday === 0 && now.getHours() >= 21) {
         daysUntilTuesday = 7;
       }
@@ -34,7 +34,6 @@ const MatchCenter = () => {
       const distance = targetDate - now;
 
       if (distance < 0) {
-        // This might happen briefly before next Tuesday is calculated on refresh
         setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
       } else {
         const days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -63,14 +62,14 @@ const MatchCenter = () => {
           <div className="match-center__match-info">
             <div className="match-center__teams">
               <div className="match-center__team">
-                <img src="src/assets/img/home-escudo.png" alt="ATLETICO 27" className="match-center__team-img" />
+                <img src={escudo} alt="ATLETICO 27" className="match-center__team-img" />
                 <span className="match-center__team-name">ATLETICO 27</span>
               </div>
               <div className="match-center__vs">
                 <span>VS</span>
               </div>
               <div className="match-center__team">
-                <img src="src/assets/img/home-escudo vs.png" alt="Rival" className="match-center__team-img" />
+                <img src={escudoVs} alt="Rival" className="match-center__team-img" />
                 <span className="match-center__team-name">POR DEFINIR</span>
               </div>
             </div>

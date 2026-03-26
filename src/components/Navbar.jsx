@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import logo from '../assets/img/logo-A27.png';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,14 +16,12 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Shadow Header
       if (window.scrollY >= 50) {
         setIsShadowHeader(true);
       } else {
         setIsShadowHeader(false);
       }
 
-      // Active Link
       const sections = document.querySelectorAll('section[id]');
       const scrollDown = window.scrollY;
 
@@ -45,7 +44,7 @@ const Navbar = () => {
     <header className={`header ${isShadowHeader ? 'shadow-header' : ''}`} id="header">
       <nav className="nav container">
         <a href="#" className="nav__logo">
-          <img src="src/assets/img/logo-A27.png" alt="logo atletico 27" />
+          <img src={logo} alt="logo atletico 27" />
           ATLETICO 27 F.C.
         </a>
 

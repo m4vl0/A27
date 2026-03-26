@@ -4,33 +4,19 @@
       "name": "Jugador 1",
       "position": "Portero",
       "number": "1",
-      "img": "src/assets/img/Camiseta 1-img.png"
+      "img": "/img/Camiseta 1-img.png"
     },
     {
       "name": "Jugador 2",
       "position": "Defensa",
       "number": "2",
-      "img": "src/assets/img/Camiseta-img.png"
+      "img": "/img/Camiseta-img.png"
     },
     {
       "name": "Jugador 3",
       "position": "Mediocampista",
       "number": "3",
-      "img": "src/assets/img/Camiseta-img.png"
-    }
-  ],
-  "results": [
-    {
-      "team_a": "ATLETICO 27",
-      "score_a": "6",
-      "team_b": "RIVAL A",
-      "score_b": "7"
-    },
-    {
-      "team_a": "ATLETICO 27",
-      "score_a": "0",
-      "team_b": "RIVAL B",
-      "score_b": "0"
+      "img": "/img/Camiseta-img.png"
     }
   ]
 }
